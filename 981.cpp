@@ -6,7 +6,6 @@ using namespace std;
 
 class TimeMap {
 public:
-    /** Initialize your data structure here. */
     map<string, map<int, string> > list;
     map<int, string>::iterator it;
 
@@ -36,19 +35,7 @@ public:
  */
 
 int main(){
-    map<int, string> m;
-    m[1] = "one";
-    m[2] = "two";
-    m[3] = "three";
-    m[4] = "four";
-    m[5] = "five";
-
-    map<int, string>::iterator it;
-    it = m.lower_bound(3.5);
-    cout<<it->second<<endl;
-    it = m.upper_bound(3.5);
-    cout<<it->second<<endl;
-
+    cout<<"..."<<endl;
     system("pause");
     return 0;
 }
