@@ -27,7 +27,7 @@ public:
                 {
                     if(s[i-1]!=p[j-2] && p[j-2]!='.')
                     {
-                        dp[i][j] = dp[i][j-2]
+                        dp[i][j] = dp[i][j-2];
                     }
                     else
                     {
@@ -38,7 +38,7 @@ public:
                 }
             }
         }
-        
+        return dp[m][n];
     }
 };
 
