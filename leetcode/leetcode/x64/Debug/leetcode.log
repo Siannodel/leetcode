@@ -1,0 +1,11 @@
+﻿  378.cpp
+e:\onedrive\work\git\leetcode\leetcode\leetcode\378.cpp(31): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\leetcode\378.cpp(32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\leetcode\378.cpp(64): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\leetcode\378.cpp(65): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\leetcode\378.cpp(95): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\leetcode\378.cpp(96): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\leetcode\378.cpp(116): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\leetcode\378.cpp(117): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  leetcode.vcxproj -> E:\OneDrive\work\git\leetcode\leetcode\x64\Debug\leetcode.exe
+  leetcode.vcxproj -> E:\OneDrive\work\git\leetcode\leetcode\x64\Debug\leetcode.pdb (Full PDB)
