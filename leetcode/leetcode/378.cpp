@@ -136,7 +136,7 @@ public:
 		return left;
 	}
 };
-int main()
+int main1()
 {
 	vector<vector<int> > matrix = {
 		{1, 5, 9}, 
