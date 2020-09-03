@@ -69,20 +69,20 @@ public:
         int slow = 0;
         int fast = 0;
 
-        while(slow < nums.size()-1 && fast < nums.size()-1)
+        while(slow < nums.size() && fast <= nums.size())
         {
             slow = nums[slow];
             fast = nums[fast];
-            if (fast < nums.size()-1)
+            if (fast < nums.size())
                 fast = nums[fast];
             if (slow == fast) break;
         }
-        int slow = 0;
+        slow = 0;
         while(slow != fast)
         {
             slow = nums[slow];
             fast = nums[fast];
         }
-        return nums[slow];
+        return slow;
     }
 };
