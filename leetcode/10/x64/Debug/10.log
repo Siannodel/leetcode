@@ -1,0 +1,5 @@
+﻿  10.cpp
+e:\onedrive\work\git\leetcode\leetcode\10\10.cpp(14): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\10\10.cpp(15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  10.vcxproj -> E:\OneDrive\work\git\leetcode\leetcode\x64\Debug\10.exe
+  10.vcxproj -> E:\OneDrive\work\git\leetcode\leetcode\x64\Debug\10.pdb (Full PDB)
