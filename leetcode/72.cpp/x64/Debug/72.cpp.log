@@ -1,0 +1,5 @@
+﻿  72.cpp.cpp
+e:\onedrive\work\git\leetcode\leetcode\72.cpp\72.cpp.cpp(18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\onedrive\work\git\leetcode\leetcode\72.cpp\72.cpp.cpp(19): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  72.cpp.vcxproj -> E:\OneDrive\work\git\leetcode\leetcode\x64\Debug\72.cpp.exe
+  72.cpp.vcxproj -> E:\OneDrive\work\git\leetcode\leetcode\x64\Debug\72.cpp.pdb (Full PDB)
