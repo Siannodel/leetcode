@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class Solution {
+class Solution1 {
 public:
 	int minDistance(string word1, string word2) {
 		if (word1.size() > word2.size())
@@ -46,12 +46,23 @@ public:
 	}
 };
 
+class Solution {
+public:
+	int getSum(int a, int b) {
+		while (b != 0)
+		{
+			int tmp = a ^ b;
+			b = (a & b) << 1;
+			a = tmp;
+		}
+		return a;
+	}
+};
+
 int main()
 {
 	Solution sol;
-	string word1 = "zoo";
-	string word2 = "zo";
-	cout << sol.minDistance(word1, word2) << endl;
+	cout << sol.getSum(1, -1) << endl;
 	system("pause");
     return 0;
 }

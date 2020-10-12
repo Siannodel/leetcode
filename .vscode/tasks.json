@@ -5,7 +5,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "g++ build",
+            "label": "C/C++: g++.exe build active file",
             "command": "g++",
             "args": [
                 "-g",
@@ -14,7 +14,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "C:\\Program Files\\mingw-w64\\mingw64\\bin"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
                 "$gcc"
