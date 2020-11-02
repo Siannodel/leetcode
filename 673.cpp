@@ -4,33 +4,46 @@ using namespace std;
 
 class Solution {
 public:
-    int findNumberOfLIS(vector<int>& nums) {
-        vector<int> dp(nums.size(), 1);
-        int max_len = 0;
-        int ans = 0;
-
-        for (int i = 0; i < nums.size(); ++i)
+	int findNumberOfLIS(vector<int>& nums) {
+        if (nums.size() == 0)
         {
-            int tmp = 1;
-            for (int j = 0; j < i; ++j)
-            {
-                if (nums[i] > nums[j])
-                {
-                    tmp = max(tmp, dp[j]+1);
-                    if (max_len < tmp)
-                    {
-                        max_len = tmp;
-                        ans = 1;
-                    }
-                    else (max_len == tmp)
-                    {
-                        ++ans;
-                    }
-                }
-            }
-            dp[i] == tmp;
+            return 0;
         }
+		vector<int> lengths(nums.size(), 1);
+		vector<int> counters(nums.size(), 1);
 
-        return ans;
-    }
+		for (int i = 0; i < nums.size(); ++i)
+		{
+			int tmp = 1;
+			for (int j = 0; j < i; ++j)
+			{
+				if (nums[i] > nums[j])
+				{
+					if (lengths[j] + 1 > lengths[i])
+					{
+						lengths[i] = lengths[j] + 1;
+						counters[i] = counters[j];
+					}
+					else if (lengths[j] + 1 == lengths[i])
+					{
+						counters[i] += counters[j];
+					}
+
+				}
+			}
+			
+		}
+
+		int max_len = *max_element(lengths.begin(), lengths.end());
+		int ans = 0;
+		for (int i = 0; i < nums.size(); ++i)
+		{
+			if (lengths[i] == max_len)
+			{
+				ans += counters[i];
+			}
+		}
+
+		return ans;
+	}
 };
